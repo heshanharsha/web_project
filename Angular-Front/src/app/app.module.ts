@@ -32,6 +32,7 @@ import { PostService } from './services/post.service';
 import { RequestService } from './services/request.service';
 import { FlashMessagesService } from 'angular2-flash-messages';
 import { AuthguardService } from './services/authguard.service';
+import { AboutComponent } from './components/about/about.component';
 
 
 
@@ -46,6 +47,7 @@ const applicationRoutes:Routes = [
     {path:'manageUsers',component:ManageUsersComponent,canActivate: [AuthguardService], data: {roles: ['Admin']}},
     {path:'profile',component:ProfileComponent,canActivate: [AuthguardService], data: {roles: ['All']}},
     {path:'',component:HomeComponent},
+    {path:'about',component:AboutComponent},
     {path:'requestLeaves',component:RequestLeavesComponent,canActivate: [AuthguardService], data: {roles: ['Admin&Staff']}},
     {path:'leaveHistory',component:LeaveHistoryComponent,canActivate: [AuthguardService], data: {roles: ['Admin&Staff']}},
     {path:'addPost',component:AddPostComponent,canActivate: [AuthguardService], data: {roles: ['Head&Admin']}},
@@ -79,6 +81,7 @@ const applicationRoutes:Routes = [
     UpdatePostComponent,
     CreatePDFComponent,
     ControlDatesComponent,
+    AboutComponent,
 
 
   ],

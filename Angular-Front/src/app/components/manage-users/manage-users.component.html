@@ -1,29 +1,35 @@
 <div class = "container">
-	<h2 class = "page-header"> Register Staff</h2>
-	<form (submit) = "registerData()">
-		<div class = "form-group">
-			<label>Name</label>
-			<input type="text" [(ngModel)] = "full_name" name ="full_name" class = "form-control">
-		</div>
-		<div class = "form-group">
-			<label>Phone No.</label>
-			<input type="text" [(ngModel)] = "phone" name ="phone" class = "form-control" required>
-		</div>
-		<div class = "form-group">
-			<label>Username</label>
-			<input type="text" [(ngModel)] = "username" name ="username" class = "form-control" required>
-		</div>
-		<div class = "form-group">
-			<label>Email</label>
-			<input type="text" [(ngModel)] = "email" name ="email" class = "form-control" required>
-		</div>
-		<div class = "form-group">
-			<label>Password</label>
-			<input type="text" [(ngModel)] = "password" name ="password" class = "form-control" required>
-		</div>
-		
-		<input type="submit" class ="btn btn-success" value = "Submit">
-	</form>
+  <h2 class = "page-header"> Register Staff</h2>
+  <form (submit) = "registerData()">
+    <div class = "form-group col-md-7">
+      <label>Name</label>
+      <input type="text" [(ngModel)] = "full_name" name ="full_name" class = "form-control">
+    </div>
+    <!--<div class="col-md-4"></div>-->
+
+    <div class = "form-group col-md-7">
+      <label>Phone No.</label>
+      <input type="text" [(ngModel)] = "phone" name ="phone" class = "form-control" required>
+    </div>
+    <!--<div class="col-md-4"></div>-->
+
+    <div class = "form-group col-md-7">
+      <label>Username</label>
+      <input type="text" [(ngModel)] = "username" name ="username" class = "form-control" required>
+    </div>
+    <div class = "form-group col-md-7">
+      <label>Email</label>
+      <input type="text" [(ngModel)] = "email" name ="email" class = "form-control" required>
+    </div>
+    <div class = "form-group col-md-7">
+      <label>Password</label>
+      <input type="text" [(ngModel)] = "password" name ="password" class = "form-control" required>
+    </div>
+
+    <div class="col-md-7">
+      <input type="submit" class ="btn btn-primary" value = "Submit">
+    </div>
+  </form>
 </div>
 <hr>
 <div class = "container">
@@ -34,13 +40,13 @@
 			   <th>Contact</th>
 			   <th>Delete</th>
 			</tr>
-			  
+
 			<tr *ngFor = "let user of users">
 			   <td>{{user.full_name}}</td>
 			   <td>{{user.post}}</td>
 			   <td>{{user.phone}}</td>
 			   <th><input type="button" (click) = "deleteUser(user._id)" value= "Delete" class ="btn btn-danger"></th>
 			</tr>
-			
+
 	</table>
 </div>

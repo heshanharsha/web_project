@@ -1,38 +1,106 @@
 <div class = "container">
-	<div *ngFor = "let post of posts">
-	  <div class="row" style="background-color: #cce0ff;height: 400px;">
-	   <div class = "row">
-	   	  <div class = "col-md-12">
-			<h1>{{post.about}}</h1>
-		  </div>  
-	   </div>	
-       <div class = "row">
-		  <div class = "col-md-1">
-			<h3>Post</h3>
-		  </div>
-		  <div class = "col-md-1">
-			<h3>by</h3>
-		  </div>
-		  <div class = "col-md-1">
-			<h3>{{post.name}}</h3>
-		  </div>
-		  <div class = "col-md-1">
-			<h3>({{post.post}})</h3>
-		  </div>
-		  <div class = "col-md-1">
-			<h3>On</h3>
-		  </div>
-		  <div class = "col-md-4">
-			<h3>{{post.date}}</h3>
-		  </div>	
-	   </div>
-	   <br><br>
-	   <div class = "row">
-	   	  <div class = "col-md-12">
-	   	    <p>{{post.content}}</p>
-	   	  </div>  
-	   </div>
-	  </div>
-	  <br><br>
-   </div>	
+
+  <!--under the nav bar-->
+  <div class="container">
+
+    <!--1 st class-->
+    <div class="under-nav-bar-module-1">
+      <div class="col-md-3" >
+        <img src="assets/image/UCSC-Logo.jpg" height="100px" width="100px">
+      </div>
+
+      <div class="col-md-9">
+        <h2><font size="16px">welcome to UCSC e-leave forum</font></h2>
+      </div>
+    </div>
+
+    <div class="under-nav-bar-module-2">
+
+    </div>
+  </div>
+  <br><br>
+
+  <div class="container">
+
+    <!--2 nd class-->
+    <div class="under-nav-bar-module-1">
+      <!--<div class="col-md-1"></div>-->
+      <div class="col-md-12" >
+        <img src="assets/image/ucsc-b.jpg" height="340px" width="100%">
+      </div>
+    </div>
+
+    <div class="under-nav-bar-module-2">
+
+    </div>
+  </div>
+  <br><br>
+
+  <div class="container">
+    <h2>Site announcements</h2>
+    <br><br>
+    <div *ngFor = "let post of posts">
+
+      <table class="table">
+        <thead>
+        <tr>
+          <th scope="col">{{post.about}}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>{{post.name}} {{post.date}} </td>
+        </tr>
+        <tr>
+          <td>{{post.content}}</td>
+        </tr>
+        </tbody>
+      </table>
+
+
+      <!--<div class="row" style="background-color: #cce0ff;height: 400px;">-->
+      <!--<div class = "row">-->
+      <!--<div class = "col-md-12">-->
+      <!--<h2>{{post.about}} </h2>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<div class = "row">-->
+      <!--<div class = "col-md-1">-->
+      <!--<h5>Post</h5>-->
+      <!--</div>-->
+      <!--<div class = "col-md-1">-->
+      <!--<h5>by</h5>-->
+      <!--</div>-->
+      <!--<div class = "col-md-1">-->
+      <!--<h5>{{post.name}}</h5>-->
+      <!--</div>-->
+      <!--<div class = "col-md-1">-->
+      <!--<h5>({{post.post}})</h5>-->
+      <!--</div>-->
+      <!--<div class = "col-md-1">-->
+      <!--<h5>On</h5>-->
+      <!--</div>-->
+      <!--<div class = "col-md-4">-->
+      <!--<h5>{{post.date}}</h5>-->
+      <!--</div>-->
+      <!--</div>-->
+
+      <!--<div class = "row">-->
+      <!--<div class = "col-md-12">-->
+      <!--<h4>{{post.content}}</h4>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
+      <br><br>
+    </div>
+  </div>
+
+  <div class="container">
+    <h3>Other useful links</h3>
+    <h5><a href="http://ucsc.cmb.ac.lk/">Visit UCSC Website</a></h5>
+    <h5><a href="http://ugvle.ucsc.cmb.ac.lk/">Visit UGVLE</a></h5>
+  </div>
+
+
+
 </div>
