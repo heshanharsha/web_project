@@ -26,6 +26,7 @@
     "bootstrap": "^3.3.7",
     "core-js": "^2.5.4",
     "jspdf": "^1.4.1",
+    "moment": "^2.22.2",
     "ng2-bearer": "^0.1.28",
     "ngx-bootstrap": "^3.0.1",
     "rxjs": "^6.2.0",

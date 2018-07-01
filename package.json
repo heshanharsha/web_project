@@ -1,13 +1,13 @@
 {
-  "name": "compareme",
+  "name": "leave_managment_system",
   "version": "1.0.0",
-  "description": "3rd year group project",
+  "description": "3rd year Advanced web induvidual project",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app"
   },
-  "author": "Sahan",
+  "author": "heshan",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
