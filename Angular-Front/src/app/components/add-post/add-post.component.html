@@ -1,0 +1,42 @@
+<div class = "container">
+	<h2 class = "page-header"> Add Post</h2>
+	<form (submit) = "addPost()">
+		<div class = "form-group">
+			<label>About</label>
+			<input type="text" [(ngModel)] = "about" name ="about" class = "form-control" required>
+		</div>
+		<div class = "form-group">
+			<label>Date</label>
+			<input type="text" bsDatepicker [(ngModel)] = "date" name ="date" class = "form-control" required>
+		</div>
+		<div class = "form-group">
+			<label>Content</label><br>
+			<textarea [(ngModel)]='content' name ="content" rows="6" cols="100"></textarea>
+		</div>
+		
+		<input type="submit" class ="btn btn-success" value = "Submit">
+	</form>
+</div>
+<hr>
+<div class = "container">
+	<table>
+			<tr>
+			   <th>Name</th>
+			   <th>Post</th>
+			   <th>Date</th>
+			   <th>About</th>
+			   <th>Delete</th>
+			   <th>Update</th>
+			</tr>
+			  
+			<tr *ngFor = "let post of posts">
+			   <td>{{post.name}}</td>
+			   <td>{{post.post}}</td>
+			   <td>{{post.date}}</td>
+			   <th>{{post.about}}</th>
+			   <th><input type="button" (click) = "deletePost(post._id)" value= "Delete" class ="btn btn-danger"></th>
+			   <th><input type="button" (click) = "updatePost(post._id)" value= "Edit" class ="btn btn-warning"></th>
+			</tr>
+			
+	</table>
+</div>
