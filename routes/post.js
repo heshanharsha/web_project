@@ -3,6 +3,10 @@ const router = express.Router();
 const Post = require('../models/post');
 const config = require('../config/database');
 
+//var moment = require('moment');
+
+
+
 
 router.post("/savePost",function(req, res) {
 	const newPost = new Post({
