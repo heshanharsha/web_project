@@ -1,25 +1,183 @@
-<div class = 'container'>
-	<div *ngIf="user">
-		<div class = "row">
-			NAME : {{user.full_name}}
-		</div>
-		<br>
-		<div class = "row">
-			POST : {{user.post}}
-		</div>
-		<br>
-		<div class = "row">
-			CONTACT NO : {{user.phone}}
-		</div>
-		<br>
-		<div class = "row">
-			USERNAME : {{user.username}}
-		</div>
-		<br>
-		<div class = "row">
-			EMAIL : {{user.email}}
-		</div>
-		<br>
+<!--<div class = 'container'>-->
+	<!--<div *ngIf="user">-->
+		<!--<div class = "row">-->
+			<!--NAME : {{user.full_name}}-->
+		<!--</div>-->
+		<!--<br>-->
+		<!--<div class = "row">-->
+			<!--POST : {{user.post}}-->
+		<!--</div>-->
+		<!--<br>-->
+		<!--<div class = "row">-->
+			<!--CONTACT NO : {{user.phone}}-->
+		<!--</div>-->
+		<!--<br>-->
+		<!--<div class = "row">-->
+			<!--USERNAME : {{user.username}}-->
+		<!--</div>-->
+		<!--<br>-->
+		<!--<div class = "row">-->
+			<!--EMAIL : {{user.email}}-->
+		<!--</div>-->
+		<!--<br>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="container">
+   <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="table-responsive">
+        <table class="table table-hover text">
+          <tr class="info">
+            <td><b>NAME</b></td>
+            <td><b>{{user.full_name}}</b></td>
+          </tr>
+          <tr class="warning">
+            <td><b>POST</b></td>
+            <td><b>{{user.post}}</b></td>
+          </tr>
+          <tr class="info">
+            <td><b>CONTACT NO</b></td>
+            <td><b>{{user.phone}}</b></td>
+          </tr>
+          <tr class="success">
+            <td><b>USERNAME</b></td>
+            <td><b>{{user.username}}</b></td>
+          </tr>
+          <tr class="danger">
+            <td><b>EMAIL</b></td>
+            <td><b>{{user.email}}</b></td>
+          </tr>
+        </table>
+      </div>
     </div>
-</div>
+    <div class="col-md-2"></div>
+  </div>
+  <!--<div class="cl-mod-3"></div>-->
+  <!--<div class="cl-mod-6">-->
+    <!--<div class="table-responsive">-->
+      <!--<table class="table table-hover">-->
+        <!--<tr class="info">-->
+          <!--<td><b>NAME</b></td>-->
+          <!--<td><b>{{user.full_name}}</b></td>-->
+        <!--</tr>-->
+        <!--<tr class="warning">-->
+          <!--<td><b>POST</b></td>-->
+          <!--<td><b>{{user.post}}</b></td>-->
+        <!--</tr>-->
+        <!--<tr class="info">-->
+          <!--<td><b>CONTACT NO</b></td>-->
+          <!--<td><b>{{user.phone}}</b></td>-->
+        <!--</tr>-->
+        <!--<tr class="success">-->
+          <!--<td><b>USERNAME</b></td>-->
+          <!--<td><b>{{user.username}}</b></td>-->
+        <!--</tr>-->
+        <!--<tr class="danger">-->
+          <!--<td><b>EMAIL</b></td>-->
+          <!--<td><b>{{user.email}}</b></td>-->
+        <!--</tr>-->
+      <!--</table>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div class="cl-mod-3"></div>-->
 
+<!--<table style="width:80%">-->
+  <!--<tr>-->
+    <!--<th>#</th>-->
+    <!--<th>#</th>-->
+  <!--</tr>-->
+  <!--<tr>-->
+    <!--<td>NAME</td>-->
+    <!--<td>{{user.full_name}}</td>-->
+  <!--</tr>-->
+  <!--<tr>-->
+    <!--<td>POST</td>-->
+    <!--<td>{{user.post}}</td>-->
+  <!--</tr>-->
+  <!--<tr>-->
+    <!--<td>CONTACT NO</td>-->
+    <!--<td>{{user.phone}}</td>-->
+  <!--</tr>-->
+  <!--<tr>-->
+    <!--<td>USERNAME</td>-->
+    <!--<td>{{user.username}}</td>-->
+  <!--</tr>-->
+  <!--<tr>-->
+    <!--<td>EMAIL</td>-->
+    <!--<td>{{user.email}}</td>-->
+  <!--</tr>-->
+<!--</table>-->
+  <!--<table class="table table-hover">-->
+    <!--<thead>-->
+    <!--<tr>-->
+      <!--<th scope="col">Type</th>-->
+      <!--<th scope="col">Column heading</th>-->
+      <!--<th scope="col">Column heading</th>-->
+      <!--<th scope="col">Column heading</th>-->
+    <!--</tr>-->
+    <!--</thead>-->
+    <!--<tbody>-->
+    <!--<tr class="table-active">-->
+      <!--<th scope="row">Active</th>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+      <!--<th scope="row">Default</th>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+    <!--</tr>-->
+    <!--<tr class="table-primary">-->
+      <!--<th scope="row">Primary</th>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+    <!--</tr>-->
+    <!--<tr class="table-secondary">-->
+      <!--<th scope="row">Secondary</th>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+    <!--</tr>-->
+    <!--<tr class="table-success">-->
+      <!--<th scope="row">Success</th>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+    <!--</tr>-->
+    <!--<tr class="table-danger">-->
+      <!--<th scope="row">Danger</th>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+    <!--</tr>-->
+    <!--<tr class="table-warning">-->
+      <!--<th scope="row">Warning</th>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+    <!--</tr>-->
+    <!--<tr class="table-info">-->
+      <!--<th scope="row">Info</th>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+    <!--</tr>-->
+    <!--<tr class="table-light">-->
+      <!--<th scope="row">Light</th>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+    <!--</tr>-->
+    <!--<tr class="table-dark">-->
+      <!--<th scope="row">Dark</th>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+      <!--<td>Column content</td>-->
+    <!--</tr>-->
+    <!--</tbody>-->
+  <!--</table>-->
+</div>

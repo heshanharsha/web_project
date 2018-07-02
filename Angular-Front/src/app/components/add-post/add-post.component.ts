@@ -48,9 +48,10 @@ export class AddPostComponent implements OnInit {
          this.posts.push(request);
          this.postService.getAllPost().subscribe(request=>{
              this.posts = request;
-         }); 
-    }); 
-  
+
+         });
+    });
+
   }
 
    deletePost(id:any)
@@ -76,7 +77,7 @@ export class AddPostComponent implements OnInit {
                 "id": id
             }
         };
-        this.router.navigate(["/updatePost"], navigationExtras);  
+        this.router.navigate(["/updatePost"], navigationExtras);
   }
 
 }
