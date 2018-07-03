@@ -51,16 +51,18 @@
 			   <th>Name</th>
 			   <th>Post</th>
 			   <th>Contact</th>
+         <th>Update</th>
 			   <th>Delete</th>
-			   <th>Update</th>
+
 			</tr>
 
 			<tr *ngFor = "let user of users">
 			   <td>{{user.full_name}}</td>
 			   <td>{{user.post}}</td>
 			   <td>{{user.phone}}</td>
+        <th><input type="button" (click) = "updateUser(user._id)" value= "Edit" class ="btn btn-success"></th>
 			   <th><input type="button" (click) = "deleteUser(user._id)" value= "Delete" class ="btn btn-danger"></th>
-			   <th><input type="button" (click) = "updateUser(user._id)" value= "Edit" class ="btn btn-warning"></th>
+
 			</tr>
 
 	</table>

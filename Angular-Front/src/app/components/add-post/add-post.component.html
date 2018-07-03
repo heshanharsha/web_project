@@ -45,8 +45,9 @@
 			   <td>{{post.post}}</td>
 			   <td>{{post.date}}</td>
 			   <th>{{post.about}}</th>
+        <th><input type="button" (click) = "updatePost(post._id)" value= "Edit" class ="btn btn-success"></th>
 			   <th><input type="button" (click) = "deletePost(post._id)" value= "Delete" class ="btn btn-danger"></th>
-			   <th><input type="button" (click) = "updatePost(post._id)" value= "Edit" class ="btn btn-warning"></th>
+
 			</tr>
 
 	</table>
