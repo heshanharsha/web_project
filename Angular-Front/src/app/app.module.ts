@@ -33,6 +33,8 @@ import { RequestService } from './services/request.service';
 import { FlashMessagesService } from 'angular2-flash-messages';
 import { AuthguardService } from './services/authguard.service';
 import { AboutComponent } from './components/about/about.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 
 
 
@@ -82,6 +84,9 @@ const applicationRoutes:Routes = [
     CreatePDFComponent,
     ControlDatesComponent,
     AboutComponent,
+    FooterComponent,
+
+
 
 
   ],

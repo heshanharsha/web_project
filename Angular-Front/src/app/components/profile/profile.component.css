@@ -16,3 +16,12 @@
 .text tr td{
   padding-left: 40px;
 }
+.all {
+  background-image: url(../../../assets/image/profile.jpg);
+  /*padding: 20px;*/
+  background-repeat: no-repeat;
+  height: 505px;
+  background-size: cover;
+
+}
+

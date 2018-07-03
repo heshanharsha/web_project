@@ -10,7 +10,7 @@
       </div>
 
       <div class="col-md-9">
-        <h2><font size="16px">welcome to UCSC e-leave forum</font></h2>
+        <h2><font size="16px"><b>Welcome To UCSC E-Leave Forum</b></font></h2>
       </div>
     </div>
 
@@ -37,25 +37,36 @@
   <br><br>
 
   <div class="container">
-    <h2>Site announcements</h2>
+    <h2><b>Site Announcements</b></h2>
     <br><br>
-    <div *ngFor = "let post of posts">
+    <div class="row">
+      <!--<div class="col-md-4"></div>-->
 
-      <table class="table">
-        <thead>
-        <tr>
-          <th scope="col">{{post.about}}</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>{{post.content}}</td>
-        </tr>
-        <tr>
-          <td>{{post.date}} by {{post.name}}  </td>
-        </tr>
-        </tbody>
-      </table>
+        <div *ngFor = "let post of posts">
+          <div class="col-md-4">
+            <table class="table">
+              <thead>
+              <tr class="success">
+                <th scope="col">{{post.about}}</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr class="success">
+                <td>{{post.content}}</td>
+              </tr>
+              <tr class="success">
+                <td>{{post.date}} by {{post.name}}  </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      <!--<div class="col-md-4"></div>-->
+
+    </div>
+
+  </div>
 
 
       <!--<div class="row" style="background-color: #cce0ff;height: 400px;">-->
@@ -91,16 +102,38 @@
       <!--</div>-->
       <!--</div>-->
       <!--</div>-->
-      <br><br>
-    </div>
-  </div>
 
-  <div class="container">
-    <h3>Other useful links</h3>
-    <h5><a href="http://ucsc.cmb.ac.lk/">Visit UCSC Website</a></h5>
-    <h5><a href="http://ugvle.ucsc.cmb.ac.lk/">Visit UGVLE</a></h5>
-  </div>
+
+  <!--<div class="container">-->
+    <!--<h3>Other useful links</h3>-->
+    <!--<h5><a href="http://ucsc.cmb.ac.lk/">Visit UCSC Website</a></h5>-->
+    <!--<h5><a href="http://ugvle.ucsc.cmb.ac.lk/">Visit UGVLE</a></h5>-->
+  <!--</div>-->
 
 
 
 </div>
+
+<footer class="footer-distributed">
+
+  <div class="footer-right">
+
+    <a href="https://www.facebook.com/UCSC.LK/"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/UCSC_LK"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-github"></i></a>
+
+  </div>
+
+  <div class="footer-left">
+    <p><font size="6"><b>Contact Us</b></font></p>>
+
+    <br>
+
+    <p>Address :
+
+      UCSC, No.35, Reid Avenue, Colombo 7, Sri Lanka</p>
+    <p>Telephone Number : +94 -11- 2581245/ 7</p>
+  </div>
+
+</footer>
