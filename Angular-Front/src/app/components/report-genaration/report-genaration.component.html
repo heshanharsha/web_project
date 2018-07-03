@@ -1,6 +1,6 @@
 <div class = "container">
 <h2>Report Generate</h2>
-<br><br>	
+<br><br>
 	<table>
 			<tr>
 			   <th>Name</th>
@@ -8,13 +8,13 @@
 			   <th>Email</th>
 			   <th>Reports</th>
 			</tr>
-			  
+
 			<tr *ngFor = "let user of users">
 			   <td>{{user.full_name}}</td>
 			   <td>{{user.post}}</td>
 			   <td>{{user.email}}</td>
-			   <th><input type="button" (click) = "viewLeavesAll(user._id,user.email)" value= "Download" class ="btn btn-success"></th>
+			   <th><input type="button" (click) = "viewLeavesAll(user._id,user.email)" value= "View Report" class ="btn btn-info"></th>
 			</tr>
-			
+
 	</table>
 </div>
